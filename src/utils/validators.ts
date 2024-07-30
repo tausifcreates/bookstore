@@ -1,4 +1,5 @@
 import { body, validationResult } from 'express-validator';
+import { Request, Response, NextFunction } from 'express';
 
 export const authorValidator = [
   body('name').isString().notEmpty(),
@@ -11,7 +12,7 @@ export const bookValidator = [
   body('author_id').isInt().notEmpty(),
 ];
 
-export const validate = (req: any, res: any, next: any) => {
+export const validate = (req: Request, res: Response, next: NextFunction) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });
