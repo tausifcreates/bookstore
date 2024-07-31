@@ -1,12 +1,11 @@
 # How To Run This Project
 
 ## Setup Postgres
-1. Download Postgres Package from https://www.postgresql.org/download. The package includes Postgres Server and PgAdmin.
+1. Download Postgres from https://www.postgresql.org/download.
 2. Open PgAdmin, configure the server as necessary. create a new database. Note the username, port and database name, you will need them later.
 
 ## Install Packages
-I have used pnpm for this project. If you wish to use npm, run 
-`npm install`
+ Run `npm install`
 
 ## Configure The Project
 
@@ -31,7 +30,7 @@ to create the tables in the database.
 ### Seed Data
 Run the command
 ```
-npx knex seed:run --knexfile./knexfile.cjs
+npx knex seed:run --knexfile ./knexfile.cjs
 ```
 to seed the database with mock data.
 
