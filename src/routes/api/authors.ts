@@ -1,8 +1,8 @@
 // src/routes/authors.ts
 import { Router } from 'express';
-import { getAuthors, getAuthorById, createAuthor, updateAuthor, deleteAuthor } from '../controllers/authors-controller';
-import { authorValidator, validate } from '../utils/validators';
-import { getBooksByAuthor } from '../controllers/books-controller';
+import { getAuthors, getAuthorById, createAuthor, updateAuthor, deleteAuthor } from '../../controllers/authors-api-controller';
+import { authorValidator, validate } from '../../utils/validators';
+import { getBooksByAuthor } from '../../controllers/books-api-controller';
 
 const router = Router();
 

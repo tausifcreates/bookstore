@@ -1,0 +1,9 @@
+<h1><%= author.name %></h1>
+<p>Bio: <%= author.bio %></p>
+<p>Birthdate: <%= author.birthdate %></p>
+<h2>Books</h2>
+<ul>
+    <% books.forEach(book => { %>
+        <li><a href="/books/<%= book.id %>"><%= book.title %></a></li>
+    <% }); %>
+</ul>

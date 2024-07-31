@@ -1,7 +1,7 @@
 // src/routes/books.ts
 import { Router } from 'express';
-import { getBooks, getBookById, createBook, updateBook, deleteBook, getBooksByAuthor } from '../controllers/books-controller';
-import { bookValidator, validate } from '../utils/validators';
+import { getBooks, getBookById, createBook, updateBook, deleteBook, getBooksByAuthor } from '../../controllers/books-api-controller';
+import { bookValidator, validate } from './../../utils/validators';
 
 const router = Router();
 

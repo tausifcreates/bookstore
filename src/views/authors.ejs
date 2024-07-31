@@ -1,0 +1,6 @@
+<h1>Authors</h1>
+<ul>
+    <% authors.forEach(author => { %>
+        <li><a href="/authors/<%= author.id %>"><%= author.name %></a></li>
+    <% }); %>
+</ul>

@@ -4,9 +4,9 @@ import { faker } from '@faker-js/faker';
  * @returns { Promise<void> } 
  */
 export const seed = function(knex, Promise) {
-    return knex("authors").del()
+    return knex("books").del()
         .then(() => {
-            return knex("books").del();
+            return knex("authors").del();
         })
         .then(() => {
             const authors = [];
